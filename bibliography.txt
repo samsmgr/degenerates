@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>QUEER DEGENERATES</title>
+  <link rel="stylesheet" href="pw.css"></link>
+  <link rel="shortcut icon" type="image/x-icon" href="background.jpg"></link>
+</head>
+
+<body>
+	<body onKeyDown = "samTime()">
+	<img id = "images" src = "page2start.jpg"></img>
+	
+<style>
+	body {
+	  background-color: black;
+	  background-repeat: no-repeat;
+	  background-attachment: fixed;
+	  background-size: cover;
+		}
+	
+	#images {
+		width: 30%%;
+	}
+		
+</style>
+	
+<script>
+	
+</script>
+</body>
+</html>

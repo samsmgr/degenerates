@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>QUEER DEGENERATES</title>
+  <link rel="stylesheet" href="pw.css"></link>
+  <link rel="shortcut icon" type="image/x-icon" href="background.jpg"></link>
+</head>
+
+<body>
+	<body onLoad="hide()" onKeyDown = "samTime()">
+	<p id="hey" onclick="samTime()">press any key to continue</p>
+	<p id = "title"></p>
+	<p id="sbb"> </p>
+	<div id = "other" onclick="loadOthers()">SEE MORE</div>
+	
+	<style>
+		body {
+		  background-image: url('bossa2.jpeg');
+		  background-repeat: no-repeat;
+		  background-attachment: fixed;
+		  background-size: cover;
+		}
+		
+		#sbb {
+			color: white;
+			font-size: medium;
+			margin-left: 30%;
+			margin-right: 30%;
+			text-align: center;
+			margin-top: 20%;
+			font-family: Century Gothic;
+		}
+		#title {
+			color: white;
+			font-size: xxx-large;
+			position: absolute;
+			left: 33%;
+			top: 40%;
+			font-family: Century Gothic;
+		}
+		
+		#square {
+			height: 70px;
+			width: 70px;
+			position: absolute;
+			top: 65%;
+			left: 62%;
+		}
+		
+		#hey {
+			color: white;
+			position: absolute;
+			top: 40%;
+			left: 33%;
+			font-size: xxx-large;
+			font-family: Century Gothic;
+		}
+
+</style>
+	
+<script type = "text/javascript">
+	var shortDelay = 2000
+    var longDelay = 5000
+	
+	const testarray = ["one", "two", "three"];
+	
+	var sbb;
+	var tt1 = "QUEER DEGENERATES";
+	var tt2 = "POLICING AND PERSONHOOD IN NEW YORK'S GAY BARS, 1916 - 1969";
+	var sbbnull = " ";
+	var intro = false;
+	var choosey = 0;
+	
+	function samTime() {
+		document.getElementById("hey").style.color = "transparent";
+		if(intro == false) {
+			stoneButchBlues();
+		}
+		if(intro == true) {
+			loadOthers();
+		}
+	}
+	
+	function stoneButchBlues() {
+		sbb = [
+		"<i>The older butches warned me: if you wanted to keep your marriage, don’t go to the bars. But I’ve always been a one-woman butch. Besides, this was our community, the only one we belonged to, so we went every weekend.</i>", 
+		
+		"<i>There were two kinds of fights in the bars. Most weekends had one kind or the other, some weekends both. There were the fist fights between butch women--full of booze, shame, jealous insecutity. Sometimes the fights were awful and spread like a web to trap everyone in the bar, like the night Heddy lost her eye when she got hit upside the head with a bar stool.</i>", 
+		
+		"<i>I was real proud that in all those years I never hit another butch woman. See, I loved them too, and I understood their pain and their shame because I was so much like them. I loved the lines etched in their faces and hands and the curves of their work-weary shoulders. Sometimes I looked in the mirror and wondered what I would look like when I was their age. Now I know!</i>", 
+		
+		"<i>In their own way, they loved me too. They protected me because they knew I wasn’t a “Saturday-night butch.” The weekend butches were scared of me because I was a stone he-she. If only they had known how powerless I really felt inside! But the older butches, they knew the whole road that lay ahead of me and they wished I didn’t have to go down it because it hurt so much.</i>", 
+		
+		"<i>When I came into the bar in drag, kind of hunched over, they told me, “Be proud of what you are,” and then they adjusted my tie sort of like you did. I was like them; they knew I didn’t have a choice. So I never fought them with my fists. We clapped each each other on the back in the bars and watched each other’s backs at the factory.</i>", 
+		
+		"<i>But then there were the times our real enemies came in the front door: drunken gangs of sailors, Klan-type thugs, sociopaths and cops. You always knew when they walked in because someone thought to pull the plug on the jukebox. No matter how many times it happened, we all still went “Aw …” when the music stopped and then realized it was time to get down to business.</i>", 
+		
+		"<i>When the bigots came in, it was time to fight, and fight we did. Fought hard—femme and butch, women and men together.</i>", 
+		
+		"<i>If the music stopped and it was the cops at the door, someone plugged the music back in and we switched dance partners. Us in our suits and ties paired off with our drag queen sisters in their dresses and pumps. Hard to remember that it was illegal then for two women or two men to sway to music together. When the music ended, the butches bowed, our femme partners curtsied, and we returned to our seats, our lovers, and our drinks to await our fates.</i>", 
+		
+		"<i>That’s when I remember your hand on my belt, up under my suit jacket. That’s where your hand stayed the whole time the cops were there. “Take it easy, honey. Stay with me baby, cool off,” you’d be cooing in my ear like a special lover’s song sung to warriors who need to pick and choose their battles in order to survive.</i>", 
+		
+		"<i>We learned fast that the cops always pulled the police van right up to the bar door and left snarling dogs inside so we couldn’t get out. We were trapped, alright.</i>", 
+		
+		"<i>Remember the night you stayed home with me when I was so sick? That was the night—you remember. The cops picked out the most stone butch of them all to destroy with humiliation, a woman everyone said “wore a raincoat in the shower.” We heard they stripped her, slow, in front of everyone in the bar, and laughed at her trying to cover up her nakedness. Later she went mad, they said. Later she hung herself.</i>", 
+		
+		"<i>What would I have done if I had been there that night?</i>", 
+		
+		"<i>I’m remembering the busts in the bars in Canada. Packed in the police vans, all the Saturday-night butches giggled and tried to fluff up their hair and switch clothing so they could get thrown in the tank with the femme women—said it would be like “dyin’ and goin’ to heaven.” The law said we had to be wearing three pieces of women’s clothing.</i>", 
+		
+		"<i>We never switched clothing. Neither did our drag queen sisters. We knew, and so did you, what was coming. We needed our sleeves rolled up, our hair slicked back, in order to live through it. Our hands were cuffed tight behind our backs. Yours were cuffed in front. You loosened my tie, unbuttoned my collar, and touched my face. I saw the pain and fear for me in your face, and I whispered it would be alright. We knew it wouldn’t be.</i>", 
+		
+		"<i>I never told you what they did to us down there—queens in one tank, stone butches in the next—but you knew. One at a time they would drag our brothers out of the cells, slapping and punching them, locking the bars behind them fast in case we lost control and tried to stop them, as if we could. They’d handcuff a brother’s wrists to his ankles or chain his face against the bars. They made us watch. Sometimes we’d catch the eyes of the terrorized victim, or the soon-to-be, caught in the vise of torture, and we’d say gently, “I’m with you, honey, look at me, it’s OK, we’ll take you home.”</i>", 
+		
+		"<i>We never cried in front of the cops. We knew we were next.</i>", 
+		
+		"<i>The next time the cell door opens it will be me they drag out and chain spread-eagle to the bars. </i>", 
+		
+		"<i>Did I survive? I guess I did. But only because I knew I might get home to you.</i>", 
+		
+		"<i>They let us out last, one at a time, on Monday morning. No charges. Too late to call in sick to work, no money, hitch-hiking, crossing the border on foot, rumpled clothes, bloody, needing a shower, hurt, scared.</i>", 
+		
+		"<i>I knew you’d be home if I could get there.</i>",
+		
+		"<i>You ran a bath for me with sweet-smelling bubbles. You laid out a fresh pair of white BVDs and a T-shirt for me and left me alone to wash off the first layer of shame.</i>",
+		
+		"<i>I remember, it was always the same. I would put on the briefs, and then I’d just get the T-shirt over my head and you would find some reason to come into the bathroom, to get something or put something away. In a glance you would memorize the wounds on my body like a road map—the gashes, bruises, cigarette burns.</i>",
+		
+		"<i>Later, in bed, you held me gently, caressing me everywhere, the tenderest touches reserved for the places I was hurt, knowing each and every sore place--inside and out. You didn't flirt with me right away, knowing I wasn't confident enough to feel sexy. But slowly you coaxed my pride back out again by showing me how much you wanted me. You knew it would take you weeks again to melt the stone.</i>",
+		
+		"<i>Lately I’ve read these stories by women who are so angry with stone lovers, even mocking their passion when they finally give way to trust, to being touched. And I’m wondering: did it hurt you the times I couldn’t let you touch me? I hope it didn’t. You never showed it if it did. I think you knew it wasn’t you I was keeping myself safe from. You treated my stone self as a wound that needed loving healing. Thank you. No one’s ever done that since. If you were here tonight … well, it’s hypothetical, isn’t it?</i>",
+		
+		"<i>I never said these things to you.</i>",
+		
+		"<i>Tonight I remember the time I got busted alone, on strange turf. You’re probably wincing already, but I have to say this to you. It was the night we drove ninety miles to a bar to meet friends who never showed up. When the police raided the club we were “alone,” and the cop with gold bars on his uniform came right over to me and told me to stand up. No wonder, I was the only he-she in the place that night.</i>",
+		
+		"<i>He put his hands all over me, pulled up the band of my Jockeys and told his men to cuff me—I didn’t have three pieces of women's clothing on. I wanted to fight right then and there because I knew the chance would be lost in a moment. But I also knew that everyone would be beaten that night if I fought back, so I just stood there. I saw they had pinned your arms behind your back and cuffed your hands. One cop had his arm across your throat. I remember the look in your eyes. It hurts me even now.</i>",
+		
+		"<i>They cuffed my hands so tight behind my back I almost cried out. Then the cop unzipped his pants real slow, with a smirk on his face, and ordered me down on my knees. First I thought to myself, I can’t! Then I said out loud to myself and to you and to him, “I won’t!” I never told you this before, but something changed inside of me at that moment. I learned the difference between what I can’t do and what I refuse to do. I paid the price for that lesson. Do I have to tell you every detail? Of course not.</i>",
+		
+		"<i>When I got out of the tank the next morning you were there. You bailed me out. No charges, they just kept your money. You had waited all night long in that police station. Only I knew how hard it was for you to withstand their leers, their taunts, their threats. I knew you cringed with every sound you strained to hear from back in the cells. You prayed you wouldn’t hear me scream. I didn’t.</i>",
+		
+		"<i>I remember when we got outside to the parking lot you stopped and put your hands lightly on my shoulders and avoided my eyes. You gently rubbed the bloody places on my shirt and said, “I'll never get these stains out.” </i>",
+		
+		"<i>Damn anyone who thinks that means you were relegated in life to worrying about my ring-around-the-collar.</i>",
+		
+		"stone butch blues 2-5. leslie feinberg. 1993"
+		];
+		if(choosey < sbb.length) {
+		document.getElementById("sbb").innerHTML = sbb[choosey];
+		choosey += 1;
+		}
+		if(choosey == sbb.length) {
+			choosey += 1;
+			setTimeout(function() {document.getElementById("sbb").innerHTML = sbbnull;}, shortDelay);
+			setTimeout(function() {document.getElementById("sbb").innerHTML = tt1; document.getElementById("sbb").style.fontSize = "xxx-large";}, longDelay);
+			setTimeout(function() {document.getElementById("sbb").innerHTML = sbbnull;}, longDelay*2);
+			setTimeout(function() {document.getElementById("sbb").innerHTML = tt2; document.getElementById("sbb").style.fontSize = "medium";}, longDelay*3);
+			setTimeout(function() {document.getElementById("sbb").innerHTML = sbbnull;}, longDelay*4);
+			setTimeout(function() {document.getElementById("hey").style.color = "white";}, longDelay*5);
+			setTimeout(function() {intro = true;}, longDelay*5);
+		}
+	}
+	
+	function loadOthers() {
+		location.href = "page2.html";
+	}
+	
+	
+    function nodeScriptReplace(node) {
+        if ( nodeScriptIs(node) === true ) {
+            node.parentNode.replaceChild( nodeScriptClone(node) , node );
+        }
+        else {
+            var i = -1, children = node.childNodes;
+            while ( ++i < children.length ) {
+            nodeScriptReplace( children[i] );
+            }
+        }
+		return node;
+     }
+	 
+        function nodeScriptClone(node){
+                var script  = document.createElement("script");
+                script.text = node.innerHTML;
+
+                var i = -1, attrs = node.attributes, attr;
+                while ( ++i < attrs.length ) {                                    
+                      script.setAttribute( (attr = attrs[i]).name, attr.value );
+                }
+                return script;
+        }
+
+        function nodeScriptIs(node) {
+                return node.tagName === 'SCRIPT';
+        }
+</script>
+</body>
+</html>
